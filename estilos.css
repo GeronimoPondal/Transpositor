@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #F2F2E4;
+  
+}
+  
+/* ESTILOS DEL BOTON */
+
+p {
+     margin: 15px;
+  }
+  
+  .switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+    background-color: #151340;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  
+  
+  input:checked + .slider .Bb{
+    background-color: #151340;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+#ingresoNotas {
+  margin: 10px;
+}  
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative; /* Agregado */
+}
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#statuTextSib,
+#statuTextMib {
+  font-weight: normal;
+}
+
+#statuTextMib {
+  color: #eb3313;
+  font-weight: bold;
+}
+
+#switchButton {
+  margin-bottom: 10px;
+}
+
+
+#msj{
+
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    bottom: 155px;
+    width: 260px;
+}
+
+#keyboard-container {
+  background-color: green;
+  display: flex;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+#keyboard {
+  background-color: yellow;
+  display: flex;
+  position: relative;
+  align-items: flex-end
+}
+
+button{
+  cursor: pointer;
+}
+
+.white {
+  background-color: #FFFFF0;
+  height: 120px;
+  width: 40px;
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column; /* Cambia a column */
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 10px; /* Ajusta el margen inferior del texto */
+}
+
+
+.black {
+  background-color: #333;
+  height: 80px;
+  width: 25px;
+  border: 1.5px solid black;
+  position: absolute;
+  bottom: 0; 
+  margin-bottom: 40px;
+  display: flex; /* Agrega flex para centrar verticalmente el contenido */
+}
+
+.black .vertical-text {
+  writing-mode: vertical-rl; /* Establece el modo de escritura vertical */
+  text-orientation: mixed; /* Permite que el texto esté en posición vertical */
+  transform: rotate(180deg); /* Rota el texto 180 grados */
+  color: #FFFFF0; /* Ajusta el color del texto */
+  font-size: 12px; /* Ajusta el tamaño de fuente */
+}
+
+
+
+#btnDoS {
+  left: 28px;
+}
+#btnReS {
+  left: 67px;
+}
+#btnFaS {
+  left: 148px;
+}
+#btnSolS {
+  left: 187px;
+}
+#btnLaS {
+  left: 226px;
+}
